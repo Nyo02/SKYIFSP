@@ -1,34 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
+    <link rel="stylesheet" href="style.css">
+
+    <title>SKY IFSP</title>
 </head>
 <body>
-    <p>Selecione o aeroporto de origem</p>
-    <select name="Origem">
-        <option value ="1">Cumbica - SP</option>
-        <option value ="2">Galeão - RJ</option>
-        <option value ="3">Viracopos - SP</option>
-    </select>
-    <input id="dataSaida" type="date">
+    <header>
+        <img src="imagens/Travel_App_or_Website_Logo-removebg-preview.png">
+        <h1>Consulte passagens aéreas</h1>
+        <div id="forms">
+            
+                <select id="Origem">
+                    <option selected disabled >Selecione a origem</option>
+                    <option value ="1">Cumbica - SP</option>
+                    <option value ="2">Galeão - RJ</option>
+                    <option value ="3">Viracopos - SP</option>
+                </select>
+                <input id="dataSaida" type="date">
 
-    <p>Selecione o aeroporto de destino</p>
-    <select name="Destino">
-        <option value ="1">Cumbica - SP</option>
-        <option value ="2">Galeão - RJ</option>
-        <option value ="3">Viracopos - SP</option>
-    </select>
-   <button id="submit">Enviar</button>
+                <select id="Destino">
+                    <option selected disabled >Selecione o destino</option>
+                    <option value ="1">Cumbica - SP</option>
+                    <option value ="2">Galeão - RJ</option>
+                    <option value ="3">Viracopos - SP</option>
+                </select>
 
-    <script>
-    var botao = submit.addEventListener("click", function(){
-        alert("dono do futebol");
-    })
+                <button id="submit">Enviar</button>
+        </div>
+    </header>
+    <section>
+
+    </section>
     
-    </script>
+    <footer>
 
+    </footer>
+    
 </body>
 </html>
