@@ -8,7 +8,7 @@ body{
 }
 
 footer{
-    height: 25%;
+    height: 20%;
     width: 100%;
     background-color: #023047;
     
@@ -23,7 +23,7 @@ header{
 }
 
 section{
-    height: 80%;
+    height: 100%;
     width: 100%;
     background-color: #f1bf41;
 }
@@ -34,7 +34,7 @@ section{
 
 img{
     margin-left: 0;
-    margin-top: 1%;
+    margin-top: 2%;
     position: absolute;
     width: 8%;
 }
@@ -51,10 +51,10 @@ h1{
 
 #forms{
     width: 30%;
-    height: 30%;
+    height: 20%;
     position: absolute;
-    margin-top: 12%;
-    margin-left: 8%;
+    margin-top: 15%;
+    margin-left: 12%;
     width: 50%;
     display: flex;
     flex-direction: row;
@@ -97,7 +97,7 @@ h1{
 #img-section{
     position: absolute;
     margin-left: 5%;
-    height: 95%;
+    height: 90%;
     width: 30%;
     border-radius: 5px;
     
@@ -113,12 +113,12 @@ section{
     color: white;
     text-align: justify;
     margin-right: 5%;
-    font-size: 20px;
+    font-size: 18px;
     
 }
 
 #titulo-section{
-    font-size: 80px;
+    font-size: 40px;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
@@ -138,12 +138,14 @@ section{
 .promos{
     background-color: white;
     height: 200px; 
-    width: 260px;
+    width: 40%;
     border-radius: 10px;
     opacity: 0.9;
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
+    display: flex;
+    align-items: space-between;
+    margin: 10px;
     
           
 }
@@ -163,10 +165,18 @@ section{
 }
 
 .formata-estados{
-    font-size: 35px;
+    font-size: 20px;
+    text-align: center;
     position: absolute;
     margin: 0;
     font-weight: bold;
-    font-weight: bold;
+
+}
+
+#promo1:hover, #promo2:hover, #promo3:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width: 720px){ 
 
 }
