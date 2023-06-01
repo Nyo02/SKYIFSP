@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
     <title>SKY IFSP</title>
 </head>
 <body>
+    <script src="server.js"></script>
+    <script src="script.js"></script>
     <header>
         <img src="img/Logo-SKYIFSP.png">
         <h1>Consulte passagens aéreas</h1>
-        <div id="forms">
+        <form id="forms">
             
                 <select id="Origem">
                     <option selected disabled >Selecione a origem</option>
-                    <option value ="1">Cumbica - SP</option>
+                    <option value ="Cumbica - SP">Cumbica - SP</option>
                     <option value ="2">Galeão - RJ</option>
                     <option value ="3">Viracopos - SP</option>
                 </select>
@@ -24,13 +25,13 @@
 
                 <select id="Destino">
                     <option selected disabled >Selecione o destino</option>
-                    <option value ="1">Cumbica - SP</option>
+                    <option value ="Cumbica - SP">Cumbica - SP</option>
                     <option value ="2">Galeão - RJ</option>
                     <option value ="3">Viracopos - SP</option>
                 </select>
 
-                <button id="submit">Enviar</button>
-        </div>
+                <button id="submit" onclick="pesquisar()">Enviar</button>
+            </form>
     </header>
     <section>
         <img src="img/mulher-viajando.jpg" alt="mulher-viajando" id="img-section">

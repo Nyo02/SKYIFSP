@@ -1,5 +1,5 @@
 const express = require('express');
-const mysql = require('mysql');
+const mysql = require('mysql'); //importando módulos
 const app = express();
 const port = 3000;
 
@@ -19,22 +19,24 @@ connection.connect((error) => {
     }
   });
 
-// Definir rota de exemplo para obter todos os registros da tabela
-app.get('/registros', (req, res) => {
-    const sql = 'SELECT * FROM voo'; // Substitua "sua_tabela" pelo nome da sua tabela
+function buscar(data, destino, origem){
+  connection.query(`SELECT * FROM voo WHERE ORIGEM = ${destino}`, (error, results) => {
+    if (error) {
+      console.error('Erro ao consultar o banco de dados:', error);
+      return;
+    }
   
-    // Executa a consulta SQL
-    connection.query(sql, (error, results) => {
-      if (error) {
-        console.error('Erro ao executar consulta: ', error);
-        res.status(500).send('Erro ao executar consulta');
-      } else {
-        res.json(results);
-      }
-    });
+    if (results.length > 0) {
+      console.log('Registros do banco de dados:');
+      results.forEach((registro) => {
+        console.log(registro);
+      });
+    } else {
+      console.log('Nenhum registro encontrado.');
+    }
   });
+}
+
+
+
   
-  // Iniciar o servidor
-  app.listen(port, () => {
-    console.log(`Servidor iniciado na porta ${port}`);
-  });
