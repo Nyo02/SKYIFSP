@@ -8,6 +8,6 @@ function pesquisar(){
     let select_data = window.document.getElementById("dataSaida");
     var data = select_data.value;
 
-    buscar(data, destino, origem);
+    buscar();
 
 }
