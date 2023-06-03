@@ -1,4 +1,5 @@
 function pesquisar(){
+    alert("função pesquisar foi chamada")
     let select_origem = window.document.getElementById("Origem");
     var origem = select_origem.options[select_origem.selectedIndex].value;
 
