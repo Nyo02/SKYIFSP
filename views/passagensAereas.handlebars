@@ -1,0 +1,21 @@
+<body>
+    <header>
+        <img src="img/Logo-SKYIFSP.png">
+    </header>
+    <section>
+        <div id="passagensAereas">
+            <h2>Passagens aéreas</h2>
+            <div id="box">
+                <h1>Lista de voos</h1>
+                <ul> 
+                    {{#each voos}}
+                    <li>{{ORIGEM}}-{{DESTINO}}-{{DT_PARTIDA}}-{{DT_CHEGADA}}-{{HR_SAIDA}}-{{HR_CHEGADA}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h5 id="copyright">© 2022 - 2023 Symcode soluções de software - Todos os direitos reservados.</h5>
+    </footer>
+</body>

@@ -1,0 +1,51 @@
+    <script src="server.js"></script>
+    <script src="script.js"></script>
+    <header>
+        <img src="img/Logo-SKYIFSP.png">
+        <h1>Consulte passagens aéreas</h1>
+        <form id="forms" action="/passagensAereas" method="POST">
+            
+                <select id="Origem" name="Origem">
+                    <option selected disabled >Selecione a origem</option>
+                    <option value ="Aeroporto de Marechal Thaumaturgo - AC">Aeroporto de Marechal Thaumaturgo - AC</option>
+                    <option value ="Aeroporto de Brasileia - AC">Aeroporto de Brasileia - AC</option>
+                    <option value ="Aeroporto de Dourados - MS">Aeroporto de Dourados - MS</option>
+                    <option value ="Aeroporto de Bonito - MS">Aeroporto de Bonito - MS</option>
+                    <option value ="Aeroporto de Uberlândia - MG">Aeroporto de Uberlândia - MG</option>
+                    <option value ="Aeroporto da Pampulha - MG">Aeroporto da Pampulha - MG</option>              
+                </select>
+                <input id="dataSaida" type="date" name="dataSaida">
+
+                <select id="Destino" name="Destino">
+                    <option selected disabled >Selecione o destino</option>
+                    <option value ="Aeroporto de Congonhas - SP">Aeroporto de Congonhas - SP</option>
+                    <option value ="Aeroporto Internacional de Viracopos - SP">Aeroporto Internacional de Viracopos - SP</option>
+                    <option value ="Aeroporto Cachoeiro de Itapemirim - ES">Aeroporto Cachoeiro de Itapemirim - ES</option>
+                    <option value ="Aeroporto de Linhares - ES">Aeroporto de Linhares - ES</option>
+                    <option value ="Aeroporto de Teresina - PI">Aeroporto de Teresina - PI</option>               
+                </select>
+                
+                <button id="submit">Enviar</button>
+            </form>
+    </header>
+    <section>
+        <img src="img/mulher-viajando.jpg" alt="mulher-viajando" id="img-section">
+        <article id="article-letreiro"><br>
+            <p id="titulo-section">Conte com a gente para te fazer voar</p><br>
+
+            <p class="letreiro-section">Bem-vindo ao nosso site de passagens aéreas, o seu destino para uma 
+                viagem inesquecível! Aqui, você encontrará as melhores opções de voos 
+                para explorar o mundo, seja para uma escapada de fim de semana, 
+                uma viagem de negócios ou a realização do seu sonho de férias.</p>
+            <br>
+            <p class="letreiro-section">Então, não espere mais! Comece a sua jornada hoje mesmo e deixe-nos ajudá-lo a realizar 
+                seus planos de viagem. Encontre as melhores ofertas de passagens aéreas, reserve com confiança 
+                e embarque em uma experiência que ficará para sempre em suas lembranças. O mundo está esperando 
+                por você, e nós estamos aqui para tornar essa viagem uma realidade!</p><br>
+                  
+        </article>
+    </section>
+    
+    <footer>
+        <h5 id="copyright">© 2022 - 2023 Symcode soluções de software - Todos os direitos reservados.</h5>
+    </footer>
