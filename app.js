@@ -90,7 +90,7 @@ app.use(express.static('public'));
 
 //rotas
 app.get("/", function(req, res){
-    res.render("index");
+    res.render("passagensAereas");
 })
 
 
